@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fake News - Timeline</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #000000, #1a1a1a);
+      min-height: 100vh;
+      padding: 40px;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 50px;
+      border-radius: 20px;
+      border: 3px solid #FFD700;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      max-width: 700px;
+      text-align: center;
+      margin-bottom: 60px;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+      animation-delay: 0.2s;
+    }
+
+    h1 {
+      font-size: 50px;
+      color: #FFD700;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+      color: #f0f0f0;
+    }
+
+    .quote {
+      margin-top: 30px;
+      font-style: italic;
+      font-weight: bold;
+      color: #FFD700;
+      text-align: center;
+      font-size: 18px;
+      max-width: 700px;
+      opacity: 0;
+      animation: fadeIn 1.0s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    .quote::before {
+      content: "📜 ";
+    }
+
+    .author {
+      font-size: 14px;
+      font-style: normal;
+      color: #ccc;
+      margin-top: 5px;
+    }
+
+    .reflection-container {
+      max-width: 700px;
+      margin-top: 100px; /* più spazio dopo la citazione */
+      text-align: left;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+      animation-delay: 1.2s;
+    }
+
+    .reflection-title {
+      font-weight: 700;
+      color: #FFD700;
+      font-size: 32px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    .reflection-title:hover {
+      color: #ffec3d;
+      text-shadow: 0 0 10px #ffec3d;
+    }
+
+    .reflection-text {
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* stile linea del tempo */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      width: 100%;
+      margin: 40px auto;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+      animation-delay: 1.5s;
+    }
+
+    /* linea del tempo */
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 30px;
+      left: 5%;
+      right: 5%;
+      height: 4px;
+      background: #FFD700;
+      border-radius: 2px;
+      z-index: 1;
+    }
+
+    /* punto della linea (evento) */
+    .timeline-point {
+      position: relative;
+      z-index: 2;
+      width: 22%;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .timeline-point .circle {
+      width: 24px;
+      height: 24px;
+      background: #000;
+      border: 4px solid #FFD700;
+      border-radius: 50%;
+      margin: 0 auto 8px auto;
+      box-shadow: 0 0 10px #FFD700;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .timeline-point:hover .circle {
+      box-shadow: 0 0 20px 5px #FFD700;
+      transform: scale(1.2);
+    }
+
+    .timeline-point .year {
+      font-weight: bold;
+      color: #FFD700;
+      font-size: 18px;
+      margin-bottom: 6px;
+      transition: color 0.3s ease;
+    }
+
+    .timeline-point:hover .year {
+      color: #ffec3d; /* giallo più acceso */
+    }
+
+    .timeline-point .title {
+      color: #f0f0f0;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.2;
+      transition: color 0.3s ease;
+    }
+
+    .timeline-point:hover .title {
+      color: #ffec3d;
+    }
+
+    @media (max-width: 600px) {
+      .timeline {
+        flex-direction: column;
+        align-items: center;
+      }
+      .timeline::before {
+        display: none;
+      }
+      .timeline-point {
+        width: 80%;
+        margin-bottom: 30px;
+      }
+      .timeline-point .circle {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Fake News</h1>
+    <p>
+      Le fake news sono notizie false create per ingannare, manipolare o diffondere disinformazione.
+      Comprenderle è il primo passo per combatterle e diventare cittadini digitali consapevoli.
+    </p>
+  </div>
+
+  <div class="quote">
+    "I sofisti cercavano di 'creare' la verità attraverso la manipolazione delle opinioni"
+  </div>
+
+  <div class="reflection-container">
+    <div class="reflection-title">Fake news storiche</div>
+    <div class="reflection-text">
+      Cosa succede quando una notizia falsa si diffonde come vera? <br>
+Le fake news sono state uno strumento potente nella storia, usate per manipolare opinioni, consolidare potere o creare falsi miti. Ci mostrano quanto sia fragile la verità e quanto sia importante saper riconoscere le informazioni affidabili per evitare di ripetere gli stessi errori. <br>
+Questa linea del tempo racconta alcuni dei casi più emblematici.
+
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-point" onclick="location.href='donazione-costantino.html'">
+      <div class="circle"></div>
+      <div class="year">1053</div>
+      <div class="title">La Donazione di Costantino</div>
+    </div>
+    <div class="timeline-point" onclick="location.href='morte-simonino.html'">
+      <div class="circle"></div>
+      <div class="year">1475</div>
+      <div class="title">La morte di Simonino</div>
+    </div>
+    <div class="timeline-point" onclick="location.href='morte-napoleone.html'">
+      <div class="circle"></div>
+      <div class="year">1814</div>
+      <div class="title">La morte di Napoleone</div>
+    </div>
+    <div class="timeline-point" onclick="location.href='attacco-alieni.html'">
+      <div class="circle"></div>
+      <div class="year">1938</div>
+      <div class="title">L'attacco degli alieni</div>
+    </div>
+  </div>
+</body>
+</html>
