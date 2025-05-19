@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>La Donazione di Costantino - Fake News Storiche</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000000; /* sfondo nero */
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 215, 0, 0.05),
+        rgba(255, 215, 0, 0.05) 2px,
+        transparent 2px,
+        transparent 10px
+      );
+      color: #f0f0f0;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+      overflow-x: hidden;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+      animation-delay: 0.3s;
+    }
+
+    h1 {
+      color: #FFD700;
+      font-size: 60px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+      cursor: default;
+    }
+
+    h2 {
+      color: #ffec3d;
+      font-size: 28px;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      cursor: default;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    h2:hover {
+      color: #fff45c;
+      text-shadow: 0 0 10px #ffec3d;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    a.back-link {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      color: #FFD700;
+      border: 2px solid #FFD700;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 0 8px #FFD700;
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    a.back-link:hover {
+      background-color: #FFD700;
+      color: #000;
+      box-shadow: 0 0 20px #ffec3d;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>La Donazione di Costantino</h1>
+  <h2>Introduzione</h2>
+  <p>
+    La Donazione di Costantino è una famosa falsificazione medievale che attestava come l'imperatore romano Costantino avesse donato al Papa il controllo su Roma e su gran parte dell'Impero Romano d'Occidente.
+  </p>
+  <h2>Perché è una fake news?</h2>
+  <p>
+    Il documento fu redatto diversi secoli dopo l'epoca di Costantino, probabilmente nell'VIII secolo, da autori sconosciuti all'interno della Chiesa. <br>
+    L'obiettivo era quello di legittimare e rafforzare il potere temporale del papato, fornendo una base giuridica e storica alle sue pretese territoriali e politiche. <br>
+    La falsità del documento fu dimostrata nel 1440 dall'umanista e filologo italiano Lorenzo Valla. Attraverso un'analisi linguistica e filologica, Valla evidenziò numerosi anacronismi e incongruenze nel testo, come l'uso di termini e concetti giuridici inesistenti al tempo di Costantino.
+  </p>
+  <h2>Impatto storico</h2>
+  <p>
+    Per secoli, fu utilizzata dalla Chiesa per giustificare il proprio potere temporale e le sue rivendicazioni territoriali. Il documento fu citato in numerose occasioni per sostenere l'autorità papale su vari territori e per legittimare interventi politici. <br>
+    La scoperta della sua falsità da parte di Lorenzo Valla rappresentò un momento cruciale nella storia del pensiero critico e della filologia. Tuttavia, nonostante le evidenze presentate da Valla, la Chiesa continuò a considerare autentico il documento per oltre un secolo. 
+  </p>
+
+  <a href="index.html" class="back-link">← Torna alla Timeline</a>
+</body>
+</html>
