@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>L'Attacco degli Alieni del 1938 - Fake News Storiche</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000000; /* sfondo nero */
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 215, 0, 0.05),
+        rgba(255, 215, 0, 0.05) 2px,
+        transparent 2px,
+        transparent 10px
+      );
+      color: #f0f0f0;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+      overflow-x: hidden;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+      animation-delay: 0.3s;
+    }
+
+    h1 {
+      color: #FFD700;
+      font-size: 60px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+      cursor: default;
+    }
+
+    h2 {
+      color: #ffec3d;
+      font-size: 28px;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      cursor: default;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    h2:hover {
+      color: #fff45c;
+      text-shadow: 0 0 10px #ffec3d;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    a.back-link {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      color: #FFD700;
+      border: 2px solid #FFD700;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 0 8px #FFD700;
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    a.back-link:hover {
+      background-color: #FFD700;
+      color: #000;
+      box-shadow: 0 0 20px #ffec3d;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>L'Attacco degli Alieni del 1938</h1>
+  <h2>Introduzione</h2>
+  <p>
+    Nel 1938, milioni di americani si sintonizzarono sulla CBS Radio per ascoltare la trasmissione "The Mercury Theatre on the Air", diretta e narrata da Orson Welles. <br>
+    Quella notte, andò in onda un adattamento del romanzo di H.G. Wells "La guerra dei mondi", presentato sotto forma di notiziari interrotti da bollettini straordinari che descrivevano un'invasione aliena in corso nel New Jersey.
+  </p>
+  <h2>Perché è una fake news?</h2>
+  <p>
+    Sebbene la trasmissione fosse una rappresentazione teatrale, molti ascoltatori, sintonizzandosi dopo l'inizio, non colsero gli avvisi iniziali che indicavano la natura fittizia del programma. La struttura realistica, priva di interruzioni pubblicitarie, e l'uso di finti bollettini di notizie contribuirono a creare un senso di autenticità. Di conseguenza, alcuni ascoltatori credettero che fosse in corso un vero attacco marziano, generando panico in diverse aree degli Stati Uniti.
+  </p>
+  <h2>Impatto storico</h2>
+  <p>
+    Sebbene l'entità del panico sia stata successivamente esagerata dai giornali, l'evento evidenziò la potenza della radio come mezzo di comunicazione di massa e la vulnerabilità del pubblico alla disinformazione. Orson Welles, inizialmente criticato, divenne rapidamente una figura di spicco nel panorama culturale americano, ottenendo un contratto cinematografico che lo portò alla realizzazione di "Quarto potere".
+  </p>
+
+  <a href="index.html" class="back-link">← Torna alla Timeline</a>
+</body>
+</html>
