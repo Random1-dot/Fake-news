@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>La Morte di Simonino - Fake News Storiche</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000000; /* sfondo nero */
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 215, 0, 0.05),
+        rgba(255, 215, 0, 0.05) 2px,
+        transparent 2px,
+        transparent 10px
+      );
+      color: #f0f0f0;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+      overflow-x: hidden;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+      animation-delay: 0.3s;
+    }
+
+    h1 {
+      color: #FFD700;
+      font-size: 60px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+      cursor: default;
+    }
+
+    h2 {
+      color: #ffec3d;
+      font-size: 28px;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      cursor: default;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    h2:hover {
+      color: #fff45c;
+      text-shadow: 0 0 10px #ffec3d;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    a.back-link {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      color: #FFD700;
+      border: 2px solid #FFD700;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0 0 8px #FFD700;
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    a.back-link:hover {
+      background-color: #FFD700;
+      color: #000;
+      box-shadow: 0 0 20px #ffec3d;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>La Morte di Simonino</h1>
+  <h2>Introduzione</h2>
+  <p>
+    La notte del Giovedì Santo, a Trento, scomparve un bambino di circa due anni e mezzo, di nome Simone. <br>
+    Il suo corpo fu ritrovato tre giorni dopo, la domenica di Pasqua, nei pressi dell'abitazione di una famiglia ebrea. In un clima di diffuso antisemitismo, alimentato anche dalle predicazioni del frate francescano Bernardino da Feltre, la comunità ebraica locale fu immediatamente accusata di omicidio rituale.
+  </p>
+  <h2>Perché è una fake news?</h2>
+  <p>
+    L'accusa di omicidio rituale, nota come "accusa del sangue", era una calunnia diffusa in Europa sin dal Medioevo, secondo la quale gli ebrei avrebbero ucciso bambini cristiani per scopi rituali. Nel caso di Simonino, quindici membri della comunità ebraica furono arrestati, torturati e costretti a confessare il crimine.
+  </p>
+  <h2>Impatto storico</h2>
+  <p>
+    La vicenda ebbe conseguenze drammatiche: la comunità ebraica di Trento fu completamente distrutta e Simonino fu venerato come martire per secoli. <br>
+    Con lo spargersi della notizia, diversi progrom colpirono le comunità ebraiche delle città vicine. Solo nel 1965 la Chiesa cattolica rimosse Simonino dal Martirologio Romano, riconoscendo l'infondatezza delle accuse, e condannando l'antisemitismo.
+  </p>
+
+  <a href="index.html" class="back-link">← Torna alla Timeline</a>
+</body>
+</html>
